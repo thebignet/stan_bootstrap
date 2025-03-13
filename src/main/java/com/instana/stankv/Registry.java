@@ -1,4 +1,4 @@
 package com.instana.stankv;
 
-public interface Temperature {
+public interface Registry {
 }
