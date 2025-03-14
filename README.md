@@ -5,6 +5,11 @@
 You can clone this repository for a simple Maven project which includes test artifacts
 https://github.com/thebignet/stan_bootstrap/tree/temperature-sensor
 
+```shell
+git clone git@github.com:thebignet/stan_bootstrap.git
+git checkout temperature-sensor
+```
+
 Import it in an IDE, change the branch to `temperature-sensor` and let maven download the dependencies while we move to the next section
 
 ## Throughout this interview
