@@ -47,28 +47,28 @@ public double sense(){
 
 ### API Design
 
-Design the API for the library that will store the temperatures and have the ability to read back the latest temperature (no implementation) in `Registry`.
+Design the API for the library that will store the temperatures and have the ability to read back the latest temperature (no implementation) in `TemperatureStore`.
 
 ### Business Requirements
 
-For each of the following requirements, write a test in `RegistryTest` **first and only then** make it pass in the simplest way.
+For each of the following requirements, write a test in `TemperatureStoreTest` **first and only then** make it pass in the simplest way.
 The test has to be failing before changing the implementation to make it pass.
 After the test is passing, you can refactor as needed.
 
 ![TDD](tdd.png)
 
-#### Simplest implementation (using `SimpleRegistry`)
+#### Simplest implementation (using `SimpleTemperatureStore`)
 
 1. **Given** that I write a temperature, **then** I should be able to read it.
 2. **Given** that I write multiple temperatures, **then** I should read the last one. 
   - I should also be able to read the last temperature a second time.
 3. **Given** that I write temperatures every second for one minute, **then** I should be able to read the one from 30s ago.
-  - For this test, you will have to add a new API to `Registry`.
+  - For this test, you will have to add a new API to `TemperatureStore`.
   - Keep the API as simple as possible for retrieving the 30th last temperature.
 
-#### Stateful implementation (add a new implementation of `Registry`)
+#### Stateful implementation (add a new implementation of `TemperatureStore`)
 
-This means that we should be able to write using one instance of `Registry`, and read using another one (the instances should not share memory).
+This means that we should be able to write using one instance of `TemperatureStore`, and read using another one (the instances should not share memory).
 What would be the simplest way to be able to store information on your machine that could persist even when restarting a JVM ?
 
 1. **Given** that I write a temperature, **then** I should be able to read it.

@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.CoreMatchers.is;
 
-public class RegistryTest {
+public class TemperatureStoreTest {
     @Test
     void given_temperature_is_written_I_should_read_it_back() {
         var sensor = new TemperatureSensor();
