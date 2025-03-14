@@ -50,7 +50,7 @@ For each of the following requirements, write a test in `RegistryTest` **first a
 The test has to be failing before changing the implementation to make it pass.
 After the test is passing, you can refactor as needed.
 
-<img src="https://gist.github.com/user-attachments/assets/ab1a0acf-9827-48ef-8f03-eef4b43d1fc0e" width="500">
+![TDD](tdd.png)
 
 #### Simplest implementation (using `SimpleRegistry`)
 
