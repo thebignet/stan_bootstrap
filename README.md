@@ -62,7 +62,7 @@ After the test is passing, you can refactor as needed.
 1. **Given** that I write a temperature, **then** I should be able to read it.
 2. **Given** that I write multiple temperatures, **then** I should read the last one. 
   - I should also be able to read the last temperature a second time.
-3. **Given** that I write temperatures every second for one minute, **then** I should be able to read the one from 30s ago.
+3. **Given** that I write temperatures every second for one minute, **then** I should be able to read the one from 20s ago.
   - For this test, you will have to add a new API to `TemperatureStore`.
   - Keep the API as simple as possible for retrieving the 30th last temperature.
 
@@ -74,7 +74,7 @@ What would be the simplest way to be able to store information on your machine t
 1. **Given** that I write a temperature, **then** I should be able to read it.
 2. **Given** that I write multiple temperatures, **then** I should read the last one.
 - I should also be able to read the last temperature a second time.
-3. **Given** that I write temperatures every second for one minute, **then** I should be able to read the one from 30s ago.
+3. **Given** that I write temperatures every second for one minute, **then** I should be able to read the one from 20s ago.
   - Think about the file format that you would need to use
 
 ## Possible extensions (do not read this until you have finished the above)
