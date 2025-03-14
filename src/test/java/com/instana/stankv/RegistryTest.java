@@ -7,7 +7,14 @@ import static org.hamcrest.CoreMatchers.is;
 
 public class RegistryTest {
     @Test
-    void test_failure() {
-        assertThat(true, is(false));
+    void given_temperature_is_written_I_should_read_it_back() {
+        var sensor = new TemperatureSensor();
+        var temperatureToWrite = sensor.sense();
+        Registry registry = new SimpleRegistry();
+        // write temperature
+        // registry.xxx
+        // read temperature
+        var temperatureRead = 0d; // change this value to registry.yyy
+        assertThat(temperatureRead, is(1d));
     }
 }
