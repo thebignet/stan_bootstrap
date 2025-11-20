@@ -10,7 +10,7 @@ public class TemperatureStoreTest {
     void given_temperature_is_written_I_should_read_it_back() {
         var sensor = new TemperatureSensor();
         var temperatureToWrite = sensor.sense();
-        Registry registry = new SimpleRegistry();
+        TemperatureStore registry = new SimpleTemperatureStore();
         // write temperature
         // registry.xxx
         // read temperature
